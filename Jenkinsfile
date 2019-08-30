@@ -3,7 +3,7 @@
  * This is currently handled through Automated Builds using standard Docker Hub feature
 */
 pipeline {
-    agent { label 'linux' }
+    agent { label 'docker_label' }
 
     options {
         timeout(time: 2, unit: 'MINUTES')
